@@ -1,17 +1,13 @@
-.acme-navbar-text{
-  color: white;
-}
+.navbar{
 
-a {
-  color: black;
-}
+  font-family: LavenderiaRegular;
+  font-size: 1.9em;
 
-h1 {
-  font-size: 2em;
-  margin: 0;
-  line-height: 1.25em;
-}
-
-a:hover, a:focus {
-  color: greenyellow;
+  .navbar-collapse {
+    text-align:center;
+  }
+  .navbar-nav {
+    display:inline-block;
+    float:none;
+  }
 }

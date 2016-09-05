@@ -12,6 +12,22 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+@font-face {
+  font-family: LavenderiaRegular;
+  src: url(../assets/fonts/LavanderiaRegular.otf);
+}
+
+@font-face {
+  font-family: LavenderiaBold;
+  src: url(../assets/fonts/LavanderiaSturdy.otf);
+}
+
+.cursive-bold-main {
+
+  font-family: LavenderiaBold;
+
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
