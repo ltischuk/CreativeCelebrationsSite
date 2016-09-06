@@ -2,7 +2,12 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
-$navbar-inverse-link-color: #2eb1b1;
+$navbar-inverse-link-color: #000000;
+$navbar-inverse-bg: white;
+$navbar-inverse-border: white;
+$navbar-inverse-link-hover-color:#2eb1b1;
+$navbar-inverse-link-active-bg : white;
+$navbar-inverse-link-hover-bg:white;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import url(https://fonts.googleapis.com/css?family=Courgette);
 /**
@@ -27,12 +32,36 @@ body{
 
 }
 
+.center-div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .cursive-bold-main {
 
   font-family: Courgette;
 
 }
+
+.half-circle {
+  width: 200px;
+  height: 50px;
+  border-top-left-radius: 50px 100px;
+  border-top-right-radius: 50px 100px;
+  border: 5px solid white;
+  border-bottom: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+=rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg)
+$angle-per-char: $angle-span / $num-letters;
+@for $i from 1 through $num-letters
+.char#{$i}
++transform(rotate($angle-offset + $angle-per-char * $i))
 
 .solid-line {
 
