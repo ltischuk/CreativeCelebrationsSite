@@ -22,6 +22,18 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   font-family: 'Courgette', cursive;
 }
 
+@font-face {
+  font-family: 'fontleroybrownregular';
+  src: url('../assets/fonts/FontleroyBrown-webfont.eot');
+  src: url('../assets/fonts/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FontleroyBrown-webfont.woff') format('woff'),
+  url('../assets/fonts/FontleroyBrown-webfont.ttf') format('truetype'),
+  url('../assets/fonts/FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body{
   background-color: #2eb1b1;
 }
@@ -40,7 +52,8 @@ body{
 
 .cursive-bold-main {
 
-  font-family: Courgette;
+  font-family: fontleroybrownregular;
+  color: white;
 
 }
 
@@ -57,11 +70,11 @@ body{
   box-sizing: border-box;
 }
 
-=rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg)
-$angle-per-char: $angle-span / $num-letters;
-@for $i from 1 through $num-letters
-.char#{$i}
-+transform(rotate($angle-offset + $angle-per-char * $i))
+.main-logo-size {
+
+  font-size: 100px;
+
+}
 
 .solid-line {
 
@@ -89,16 +102,20 @@ $angle-per-char: $angle-span / $num-letters;
 .main-background-img{
   background-image: url(../assets/images/CCImg1.jpg);
   width: 100%;
-  height: 600px;
-  background-size: 100% 100%;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:100% auto;
+  background-repeat: no-repeat;
 }
 
 .thumbnail {
-height: 200px;
+  height: 200px;
 
-img.pull-right {
-  width: 50px;
-}
+  img.pull-right {
+    width: 50px;
+  }
 }
 
 /**
