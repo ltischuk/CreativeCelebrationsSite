@@ -9,7 +9,7 @@ $navbar-inverse-link-hover-color:#2eb1b1;
 $navbar-inverse-link-active-bg : white;
 $navbar-inverse-link-hover-bg:white;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
@@ -19,19 +19,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 
 @font-face {
-  font-family: 'Courgette', cursive;
-}
-
-@font-face {
-  font-family: 'fontleroybrownregular';
-  src: url('../assets/fonts/FontleroyBrown-webfont.eot');
-  src: url('../assets/fonts/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/FontleroyBrown-webfont.woff') format('woff'),
-  url('../assets/fonts/FontleroyBrown-webfont.ttf') format('truetype'),
-  url('../assets/fonts/FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
+  font-family: 'Lobster', cursive;
 }
 
 body{
@@ -52,7 +40,7 @@ body{
 
 .cursive-bold-main {
 
-  font-family: fontleroybrownregular;
+  font-family: Shrikhand;
   color: white;
 
 }
