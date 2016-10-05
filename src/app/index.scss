@@ -94,21 +94,19 @@ body{
   margin-top: 150px;
 }
 
-.jumbotron h1{
+#myCarousel {
 
-  color: white;
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+
+  img{
+    margin: 0 auto;
+  }
+
+
 }
 
-.main-background-img{
-  background-image: url(../assets/images/CCImg1.jpg);
-  width: 100%;
-  min-height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:100% auto;
-  background-repeat: no-repeat;
-}
 
 .thumbnail {
   height: 200px;
