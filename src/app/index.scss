@@ -3,11 +3,11 @@
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
 $navbar-inverse-link-color: #000000;
-$navbar-inverse-bg: white;
-$navbar-inverse-border: white;
+$navbar-inverse-bg: transparent;
+$navbar-inverse-border: transparent;
 $navbar-inverse-link-hover-color:#2eb1b1;
-$navbar-inverse-link-active-bg : white;
-$navbar-inverse-link-hover-bg:white;
+$navbar-inverse-link-active-bg : transparent;
+$navbar-inverse-link-hover-bg:transparent;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 /**
@@ -23,13 +23,19 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 }
 
 body{
-  background-color: #2eb1b1;
+
+  background-image: url("../assets/images/cheap_diagonal_fabric.png");
 }
 
 .background-main-color {
 
   background-color: #5BC2A6;
 
+}
+
+.carousel-caption{
+  top: 0;
+  bottom: auto;
 }
 
 .center-div{
@@ -67,6 +73,18 @@ body{
 
 }
 
+.main-font{
+  font-family: Lobster;
+}
+
+.margin-top-150{
+  margin-top: 150px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
 .solid-line {
 
   border-bottom:5px solid white;
@@ -79,23 +97,6 @@ body{
 .wrapper {
   border: 1px dashed #ddd;
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
-}
-
-.margin-top-150{
-  margin-top: 150px;
-}
-
-#myCarousel {
-
-  width: 75%;
-  margin: 0 auto;
-  background-color: white;
-
-  img{
-    margin: 0 auto;
-  }
-
-
 }
 
 

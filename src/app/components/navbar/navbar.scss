@@ -1,13 +1,13 @@
 .navbar{
 
-  background-color: white;
+  background-color: transparent;
   @media (max-width: 600px) {
     border-radius: 6px;
     border-color: darkgrey;
   }
 
   font-family: Lobster;
-  font-size: 3em;
+  font-size: 2em;
 
   .navbar-collapse {
     text-align:center;
