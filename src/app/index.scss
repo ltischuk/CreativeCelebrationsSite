@@ -9,7 +9,8 @@ $navbar-inverse-link-hover-color:#2eb1b1;
 $navbar-inverse-link-active-bg : transparent;
 $navbar-inverse-link-hover-bg:transparent;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
@@ -22,14 +23,24 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   font-family: 'Lobster', cursive;
 }
 
+@font-face {
+  font-family: 'Abhaya Libre', serif;
+}
+
 body{
 
-  background-image: url("../assets/images/cheap_diagonal_fabric.png");
+  background-image: url("../assets/images/norwegian_rose.png");
 }
 
 .background-main-color {
 
   background-color: #5BC2A6;
+
+}
+
+.blue-color{
+
+  color: #2eb1b1;
 
 }
 
@@ -83,6 +94,11 @@ body{
 
 .margin-top-10 {
   margin-top: 10px;
+}
+
+.main-body-text-size{
+  font-size: 2em;
+  font-family: Abhaya Libre;
 }
 
 .solid-line {
