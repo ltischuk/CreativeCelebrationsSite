@@ -12,9 +12,46 @@
 
   font-family: Lobster;
 
+
+  .carousel-caption{
+    top: 0;
+    bottom: auto;
+  }
+
+  .carousel-header{
+
+    font-size: 2em;
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+      font-size: 3em;
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+      font-size: 4em;
+
+    }
+
+    @media only screen and (min-width : 992px) {
+
+      font-size: 5em;
+
+    }
+
+  }
+
+  .carousel-indicators{
+    padding: 5px;
+  }
+
   .carousel-inner{
     padding: 25px;
   }
+
 
 
 }

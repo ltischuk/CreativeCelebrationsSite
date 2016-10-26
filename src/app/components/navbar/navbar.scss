@@ -1,19 +1,7 @@
 .navbar{
 
-  background-color: transparent;
-  @media (max-width: 600px) {
-    border-radius: 6px;
-    border-color: darkgrey;
-  }
+  background-color: #64ACAD;
 
   font-family: Lobster;
   font-size: 2em;
-
-  .navbar-collapse {
-    text-align:center;
-  }
-  .navbar-nav {
-    display:inline-block;
-    float:none;
-  }
 }

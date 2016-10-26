@@ -3,9 +3,9 @@
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
 $navbar-inverse-link-color: #000000;
-$navbar-inverse-bg: transparent;
+$navbar-inverse-bg: #221F6E;;
 $navbar-inverse-border: transparent;
-$navbar-inverse-link-hover-color:#2eb1b1;
+$navbar-inverse-link-hover-color:#ffffff;
 $navbar-inverse-link-active-bg : transparent;
 $navbar-inverse-link-hover-bg:transparent;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
@@ -30,6 +30,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 body{
 
   background-image: url("../assets/images/norwegian_rose.png");
+  padding-top: 95px;
 }
 
 .background-main-color {
@@ -42,11 +43,6 @@ body{
 
   color: #2eb1b1;
 
-}
-
-.carousel-caption{
-  top: 0;
-  bottom: auto;
 }
 
 .center-div{
@@ -76,6 +72,14 @@ body{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.show-mobile-only{
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
 }
 
 .main-logo-size {
