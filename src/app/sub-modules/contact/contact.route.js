@@ -5,16 +5,16 @@
   'use strict';
   
   angular
-    .module('home')
+    .module('contact')
     .config(routerConfig);
   
   /** @ngInject */
   function routerConfig($stateProvider) {
     $stateProvider
-      .state('main.home', {
-        url: '',
-        templateUrl: 'app/sub-modules/home/views/home.html',
-        controller: 'HomeController',
+      .state('main.contact', {
+        url: 'contact',
+        templateUrl: 'app/sub-modules/contact/views/contact.html',
+        controller: 'ContactController',
         controllerAs: 'vm'
       });
 

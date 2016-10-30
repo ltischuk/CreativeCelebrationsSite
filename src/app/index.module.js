@@ -12,6 +12,7 @@
       'ui.router',
       'ui.bootstrap',
       'toastr',
-      'home']);
+      'home',
+      'contact']);
 
 })();

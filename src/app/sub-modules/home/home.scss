@@ -18,31 +18,60 @@
     bottom: auto;
   }
 
-  .carousel-header{
+  .carousel-header {
 
-    font-size: 2em;
+    font-size: 1.75em;
+
+  }
 
     /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
 
-      font-size: 3em;
+      .carousel-header {
+
+        font-size: 3em;
+
+      }
+
+      .carousel-sub-title {
+
+        font-size: 2em;
+
+      }
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
 
-      font-size: 4em;
+      .carousel-header {
+
+        font-size: 3.5em;
+      }
+
+      .carousel-sub-title {
+
+        font-size: 2.5em;
+
+      }
 
     }
 
     @media only screen and (min-width : 992px) {
 
-      font-size: 5em;
+      .carousel-header {
+
+        font-size: 4.5em;
+
+      }
+
+      .carousel-sub-title {
+
+        font-size: 3em;
+
+      }
 
     }
-
-  }
 
   .carousel-indicators{
     padding: 5px;
