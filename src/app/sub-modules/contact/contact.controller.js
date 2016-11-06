@@ -9,8 +9,24 @@
     .controller('ContactController', ContactController);
   
   /** @ngInject */
-  function ContactController() {
+  function ContactController($scope) {
     var vm = this;
+    vm.firstName = '';
+    vm.lastName = '';
+    vm.email = '';
+    vm.phone = '';
+    vm.eventMessage = '';
+    
+    vm.submitMessage = function(){
+      
+      if($scope.contactForm.$valid){
+        
+        
+        
+      }
+      
+    }
+    
     
     activate();
     
