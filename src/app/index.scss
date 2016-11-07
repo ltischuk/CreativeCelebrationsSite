@@ -80,6 +80,12 @@ body{
   box-sizing: border-box;
 }
 
+.input-error{
+  color: red;
+  font-size: 0.5em;
+  margin-left:5px;
+}
+
 .show-mobile-only{
 
   @media (min-width: 768px) {

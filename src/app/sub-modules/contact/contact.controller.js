@@ -16,9 +16,11 @@
     vm.email = '';
     vm.phone = '';
     vm.eventMessage = '';
+    vm.submitted = false;
     
     vm.submitMessage = function(){
       
+      vm.submitted = true;
       if($scope.contactForm.$valid){
         
         

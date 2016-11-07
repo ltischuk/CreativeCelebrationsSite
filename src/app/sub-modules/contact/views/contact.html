@@ -6,55 +6,79 @@
                     <p>We are here to help you create everlasting memories!  If you are interested in our services,
                         please fill out our contact form and will get back to you as soon as possible.</p>
                 <div class="row" data-ng-form name="contactForm">
-                    <div class="col-sm-6">
-                        <div class="">
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="First Name"
-                                   data-ng-model="vm.firstName"
-                                   aria-describedby="basic-addon2"
-                                   required
-                            >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="">
+                                <input type="text"
+                                       name="firstName"
+                                       class="form-control"
+                                       placeholder="First Name"
+                                       data-ng-model="vm.firstName"
+                                       aria-describedby="basic-addon2"
+                                       required
+                                >
+                            </div>
+                            <div ng-messages="contactForm.firstName.$error" class="input-error" data-ng-show="vm.submitted && contactForm.firstName.$error" role="alert">
+                                <div ng-message="required">Please enter a valid name</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Last Name"
+                                       data-ng-model="vm.lastName"
+                                       aria-describedby="basic-addon2"
+                                       name="lastName"
+                                       required
+                                >
+                            </div>
+                            <div ng-messages="contactForm.lastName.$error" class="input-error" data-ng-show="vm.submitted && contactForm.firstName.$error" role="alert">
+                                <div ng-message="required">Please enter a valid name</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="">
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Last Name"
-                                   data-ng-model="vm.lastName"
-                                   aria-describedby="basic-addon2"
-                                   required
-                            >
+                    <div class="row">
+                        <div class="col-sm-6 margin-top-10">
+                            <div class="">
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Email"
+                                       data-ng-model="vm.email"
+                                       aria-describedby="basic-addon2"
+                                       name="email"
+                                       required
+                                >
+                            </div>
+                            <div ng-messages="contactForm.lastName.$error" class="input-error" data-ng-show="vm.submitted && contactForm.firstName.$error" role="alert">
+                                <div ng-message="required">Please enter a valid email</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 margin-top-10">
+                            <div class="">
+                                <input type="phone"
+                                       class="form-control"
+                                       data-ng-model="vm.phone"
+                                       placeholder="Phone (optional - Numbers only, no dashes)"
+                                       aria-describedby="basic-addon2"
+                                       name="phone"
+                                >
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 margin-top-10">
-                        <div class="">
-                            <input type="email"
-                                   class="form-control"
-                                   placeholder="Email"
-                                   data-ng-model="vm.email"
-                                   aria-describedby="basic-addon2"
-                                   required
-                            >
-                        </div>
-                    </div>
-                    <div class="col-sm-6 margin-top-10">
-                        <div class="">
-                            <input type="phone"
-                                   class="form-control"
-                                   data-ng-model="vm.phone"
-                                   placeholder="Phone (optional)"
-                                   aria-describedby="basic-addon2"
-                            >
-                        </div>
-                    </div>
-                    <div class="col-sm-12 margin-top-10">
-                        <div class="">
+                    <div class="row">
+                        <div class="col-sm-12 margin-top-10">
+                            <div class="">
                             <textarea class="form-control"
                                       data-ng-model="vm.eventMessage"
                                       placeholder="Event Description"
+                                      name="eventMessage"
+                                      required
                                       rows="5"></textarea>
+                            </div>
+                            <div ng-messages="contactForm.eventMessage.$error" class="input-error" data-ng-show="vm.submitted && contactForm.eventMessage.$error" role="alert">
+                                <div ng-message="required">Please include a message regarding your event or interest in services</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4 margin-top-10">
