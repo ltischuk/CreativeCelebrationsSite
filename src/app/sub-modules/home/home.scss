@@ -1,4 +1,4 @@
-#myCarousel {
+.carousel-container{
 
   width: 100%;
   margin: 0 auto;
@@ -8,6 +8,10 @@
     margin: 0 auto;
     border-radius: 25px;
     max-height:650px;
+  }
+
+  a{
+    display:none;
   }
 
   font-family: Lobster;
@@ -73,12 +77,8 @@
 
     }
 
-  .carousel-indicators{
+  .carousel-indicators {
     padding: 5px;
-  }
-
-  .carousel-inner{
-    padding: 25px;
   }
 
 
