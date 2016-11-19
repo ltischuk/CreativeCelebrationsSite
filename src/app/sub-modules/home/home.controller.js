@@ -9,28 +9,33 @@
     .controller('HomeController', HomeController);
   
   /** @ngInject */
-  function HomeController() {
+  function HomeController($scope) {
     var vm = this;
+    
   
+    $scope.active = 0;
     vm.carouselInterval = 4000;
     vm.slides = [
       
       {
         
         image: '../../../../assets/images/CCImg1.jpg',
-        subtitle: 'Unique Decor for your Unforgettable Celebration'
+        subtitle: 'Unique Decor for your Unforgettable Celebration',
+        id: 0
         
       },
       {
     
-        image: '../../../../assets/images/wedding_decor.jpg',
-        subtitle: 'Rentals & Full Service Decor'
+        image: '../../../../assets/images/wedding_decor2.jpg',
+        subtitle: 'Rentals & Full Service Decor',
+        id: 1
     
       },
       {
     
         image: '../../../../assets/images/canopy.jpg',
-        subtitle: 'Leave a Lasting Impression'
+        subtitle: 'Leave a Lasting Impression',
+        id: 2
     
       }
       

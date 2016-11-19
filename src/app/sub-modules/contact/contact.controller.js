@@ -23,18 +23,18 @@
       vm.submitted = true;
       if($scope.contactForm.$valid){
         
-        
+        console.log('here');
         
       }
       
     }
-    
-    
-    activate();
-    
+  
     function activate() {
-      
+    
     }
-
+  
+  
+  
+    activate();
   }
 })();
