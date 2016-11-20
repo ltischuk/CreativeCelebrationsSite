@@ -13,6 +13,7 @@
       'ui.bootstrap',
       'toastr',
       'home',
-      'contact']);
+      'contact',
+      'gallery']);
 
 })();

@@ -86,6 +86,10 @@ body{
   margin-left:5px;
 }
 
+.outer-container{
+  margin-top: 37px;
+}
+
 .show-mobile-only{
 
   @media (min-width: 768px) {

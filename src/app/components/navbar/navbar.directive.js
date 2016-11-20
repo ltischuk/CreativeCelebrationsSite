@@ -27,6 +27,9 @@
       // "vm.creationDate" is available by directive option "bindToController: true"
       vm.relativeDate = moment(vm.creationDate).fromNow();
   
+      
+      vm.isCollapsed = true;
+      
       /**
        * Is the nav bar item active
        * @param stateName

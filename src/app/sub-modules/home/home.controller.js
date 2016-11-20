@@ -9,7 +9,7 @@
     .controller('HomeController', HomeController);
   
   /** @ngInject */
-  function HomeController($scope) {
+  function HomeController() {
     var vm = this;
     
   

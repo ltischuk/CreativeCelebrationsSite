@@ -2,23 +2,27 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand show-mobile-only">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
+        <span data-ng-click="vm.isCollapsed = !vm.isCollapsed" class="glyphicon glyphicon-menu-hamburger"></span>
       </a>
       <div class="nav-logo-img">
         <img src="../../assets/images/cclogo1.png" alt="WeddingPot1" class="margin-top-10" width="auto" height="100px">
       </div>
     </div>
-    <div class="collapse navbar-collapse center-nav" id="bs-example-navbar-collapse-6">
+    <div class="collapse navbar-collapse center-nav" uib-collapse="vm.isCollapsed " id="bs-example-navbar-collapse-6">
 
       <ul class="nav navbar-nav">
-        <li data-ng-class="{active: vm.isNavItemActive('main.home')}" ><a ng-href="/">Home</a></li>
-        <li><a ng-href="">Services</a></li>
-        <li><a ng-href="#">Gallery</a></li>
-        <li><a ng-href="contact">Contact</a></li>
+        <li data-ng-class="{active: vm.isNavItemActive('main.home')}"><a ng-href="/">Home</a></li>
+        <li data-ng-class="{active: vm.isNavItemActive('main.services')}"><a ng-href="">Services</a></li>
+        <li data-ng-class="{active: vm.isNavItemActive('main.gallery')}"><a ng-href="gallery">Gallery</a></li>
+        <li data-ng-class="{active: vm.isNavItemActive('main.contact')}"><a ng-href="contact">Contact</a></li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
+      <!--<ul class="nav navbar-nav">-->
+        <!--<li data-ng-class="{active: vm.isNavItemActive('main.home')}"><a ng-href="/">Home</a></li>-->
+        <!--<li data-ng-class="{active: vm.isNavItemActive('main.services')}"><a ng-href="">Services</a></li>-->
+        <!--<li data-ng-class="{active: vm.isNavItemActive('main.gallery')}"><a ng-href="gallery">Gallery</a></li>-->
+        <!--<li data-ng-class="{active: vm.isNavItemActive('main.contact')}"><a ng-href="contact">Contact</a></li>-->
+      <!--</ul>-->
     </div>
   </div>
 </nav>
