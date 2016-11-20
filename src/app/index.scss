@@ -41,13 +41,17 @@ body{
 
 .blue-color{
 
-  color: #2eb1b1;
+  color: #64ACAD;
 
 }
 
 .btn-success{
-  background-color : #3E8E8E;
+  background-color : #1DACBD;
   border-color : #2eb1b1;
+
+  &:hover {
+    background-color : #68CAD8;
+  }
 
 }
 
@@ -78,6 +82,12 @@ body{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.paragraph-heading{
+
+  color: #257878;
+
 }
 
 .input-error{
