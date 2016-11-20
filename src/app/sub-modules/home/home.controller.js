@@ -13,7 +13,7 @@
     var vm = this;
     
   
-    $scope.active = 0;
+    vm.active = 0;
     vm.carouselInterval = 4000;
     vm.slides = [
       

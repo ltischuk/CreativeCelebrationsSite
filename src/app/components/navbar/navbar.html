@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse center-nav" id="bs-example-navbar-collapse-6">
 
       <ul class="nav navbar-nav">
-        <li><a ng-href="/">Home</a></li>
+        <li data-ng-class="{active: vm.isNavItemActive('main.home')}" ><a ng-href="/">Home</a></li>
         <li><a ng-href="">Services</a></li>
         <li><a ng-href="#">Gallery</a></li>
         <li><a ng-href="contact">Contact</a></li>

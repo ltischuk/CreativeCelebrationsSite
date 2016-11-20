@@ -1,7 +1,7 @@
 <div>
 
-    <div style="margin-top:37px;">
-        <uib-carousel class="carousel-container" active="active" interval="vm.carouselInterval">
+    <div class="outer-container">
+        <uib-carousel class="carousel-container" active="vm.active" interval="vm.carouselInterval">
             <uib-slide ng-repeat="slide in vm.slides" index="$index">
                 <img ng-src="{{slide.image}}" alt="WeddingDecorImg" width="auto">
                 <div class="carousel-caption">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="row">
-        <div class="center-div" style="width: 80%;">
+        <div class="center-div" class="main-paragraph-section">
             <h1 class="center-text main-font blue-color">Who We Are</h1>
             <p class="center-text main-font main-body-text-size">
                 Creative Celebrations are your premier Central Florida <b>Event Decor Specialists.</b>  Let us help you turn your vision into reality!
