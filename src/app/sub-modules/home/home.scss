@@ -29,6 +29,15 @@
 
   }
 
+  .carousel-inner>.item {
+    -webkit-transition: 0.9s ease-in-out left;
+    transition: 0.9s ease-in-out left;
+    -webkit-transition: 0.9s, ease-in-out, left;
+    -moz-transition: 0.9s, ease-in-out, left;
+    -o-transition: 0.9s, ease-in-out, left;
+    transition: 0.9s, ease-in-out, left;
+  }
+
     /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
 

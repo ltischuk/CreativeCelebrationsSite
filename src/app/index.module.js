@@ -14,6 +14,7 @@
       'toastr',
       'home',
       'contact',
-      'gallery']);
+      'gallery',
+      'services']);
 
 })();

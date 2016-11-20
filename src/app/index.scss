@@ -71,19 +71,6 @@ body{
 
 }
 
-.half-circle {
-  width: 200px;
-  height: 50px;
-  border-top-left-radius: 50px 100px;
-  border-top-right-radius: 50px 100px;
-  border: 5px solid white;
-  border-bottom: 0;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .paragraph-heading{
 
   color: #257878;
@@ -94,18 +81,6 @@ body{
   color: red;
   font-size: 0.5em;
   margin-left:5px;
-}
-
-.outer-container{
-  margin-top: 37px;
-}
-
-.show-mobile-only{
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-
 }
 
 .main-logo-size {
@@ -137,6 +112,18 @@ body{
 .main-body-text-size{
   font-size: 2em;
   font-family: Abhaya Libre;
+}
+
+.outer-container{
+  margin-top: 37px;
+}
+
+.show-mobile-only{
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
 }
 
 .solid-line {
