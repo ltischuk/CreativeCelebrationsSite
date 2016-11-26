@@ -71,6 +71,12 @@ body{
 
 }
 
+.img-link-container{
+  a:hover{
+    text-decoration: none;
+  }
+}
+
 .paragraph-heading{
 
   color: #257878;
@@ -116,6 +122,10 @@ body{
 
 .outer-container{
   margin-top: 37px;
+}
+
+.rounded-border{
+  border-radius: 25px;
 }
 
 .show-mobile-only{
