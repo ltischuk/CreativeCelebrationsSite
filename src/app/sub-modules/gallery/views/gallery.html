@@ -2,8 +2,13 @@
     <div class="row">
         <div class="col-sm-6">
             <div>
-                Events
+                <h1 class="main-font paragraph-heading">Gallery Showcase</h1>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-xs-12 margin-top-10" data-ng-repeat="galleryImg in vm.imgs">
+            <img data-ng-src="{{'../../assets/images/' + galleryImg.src}}" data-ng-click="vm.openImg(galleryImg)" alt="wedding table" class="img-thumbnail" width="auto" style="max-height:150px; margin-right: 10px;">
         </div>
     </div>
 </div>
