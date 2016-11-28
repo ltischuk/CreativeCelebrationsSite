@@ -1,9 +1,9 @@
 <div class="modal-dialog">
     <div class="modal-header center-text">
-        <h1 class="main-font paragraph-heading">{{img.description}}</h1>
+        <h1 class="main-font main-body-text-size">{{img.description}}</h1>
     </div>
     <div class="modal-body center-text">
-        <img data-ng-src="{{'../../assets/images/' + img.src}}" width="auto" height="300px"/>
+        <img data-ng-src="{{'../../assets/images/' + img.src}}" width="auto" style="max-height:300px"/>
     </div>
     <div class="modal-footer">
         <button class="btn btn-warning" type="button" ng-click="cancel()">Close</button>
