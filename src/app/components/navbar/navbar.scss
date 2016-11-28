@@ -1,9 +1,18 @@
+
 .navbar{
 
   background-color: #64ACAD;
+  a{
+    color:#0e3030;
+  }
 
   font-family: Lobster;
   font-size: 2em;
+
+  .glyphicon-menu-hamburger{
+    margin-top: 25px;
+    font-size: 1.25em;
+  }
 
   .navbar-nav{
 
@@ -17,6 +26,10 @@
     .nav-logo-img{
       float: none;
       text-align: center;
+    }
+
+    .img-link-container{
+      display: none;
     }
 
   }
