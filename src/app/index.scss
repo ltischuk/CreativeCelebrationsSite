@@ -8,9 +8,13 @@ $navbar-inverse-border: transparent;
 $navbar-inverse-link-hover-color:#ffffff;
 $navbar-inverse-link-active-bg : transparent;
 $navbar-inverse-link-hover-bg:transparent;
+$btn-success-bg :#2eb1b1;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
+
+
+
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
@@ -46,7 +50,7 @@ body{
 }
 
 .btn-success{
-  background-color : #1DACBD;
+  background-color : #64ACAD;
   border-color : #2eb1b1;
 
   &:hover {
@@ -126,14 +130,6 @@ body{
 
 .rounded-border{
   border-radius: 25px;
-}
-
-.show-mobile-only{
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-
 }
 
 .solid-line {

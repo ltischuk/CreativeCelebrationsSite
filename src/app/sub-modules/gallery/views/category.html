@@ -1,0 +1,16 @@
+<div class="outer-container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div>
+        <h1 class="main-font paragraph-heading">Gallery Categories</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row category-margin">
+    <div class="col-sm-3 col-xs-6 margin-top-10 center-text" data-ng-repeat="categoryItem in vm.categoryImgs">
+      <img data-ng-src="{{'../../assets/images/' + categoryItem.src}}" data-ng-click="vm.goToGalleryForCategory(categoryItem.category)" alt="{{categoryItem.category}}" class="img-thumbnail gallery-img" width="auto">
+      <h4 class="caption main-font paragraph-heading">{{categoryItem.category}}</h4>
+    </div>
+  </div>
+</div>
+
