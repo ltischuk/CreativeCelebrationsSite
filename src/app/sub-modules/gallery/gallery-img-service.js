@@ -3,23 +3,23 @@
  */
 (function() {
   'use strict';
-  
+
   angular
     .module('ccsite')
     .factory('GalleryImgService', GalleryImgService);
-  
+
   /** @ngInject */
   function GalleryImgService() {
-    
+
     var imageObjects =[
-  
+
       {
         src: 'gallery_custom_centerpiece.jpg',
         description:'Custom Centerpieces for your Theme',
         category: 'Weddings',
         useAsCategory : true
       },
-  
+
       {
         src: 'gallery_themed_elements1.jpg',
         description:'Custom Display Elements',
@@ -45,7 +45,7 @@
         description:'Custom Signage & Design',
         category: 'Weddings'
       },
-  
+
       {
         src: 'thompson1.jpg',
         description:'Wedding Tablescape',
@@ -56,7 +56,7 @@
         description:'Custom Tablescape',
         category: 'Weddings'
       },
-  
+
       {
         src: 'steampunk.jpg',
         description:'Themed Events',
@@ -122,36 +122,46 @@
         src: 'retromodern5.jpg',
         description: '2017 Audubon Park Retro Modern Home Tour - Courtesy of TipsoPhoto',
         category: 'Events'
+      },
+      {
+        src: 'orlandomainst.jpg',
+        description: 'Orlando Main Street Awards',
+        category: 'Events'
+      },
+      {
+        src: 'janeaward.jpg',
+        description: 'Orlando Main Street Awards - Jane Holbrook - Volunteer of the Year',
+        category: 'Events'
       }
 
     ]
-    
+
     var service = {
       getCategoryObjects: getCategoryObjects,
       filterImagesForCategory : filterImagesForCategory
     };
-    
+
     return service;
-  
+
     /**
      * Obtain the category objects to display as categories
      * @returns {Array.<*>}
      */
     function getCategoryObjects() {
-      
+
       return imageObjects.filter(function(item){return angular.isDefined(item.useAsCategory) && item.useAsCategory});
-      
+
     }
-  
+
     /**
      * Filter the images for a certain category
      * @param category
      * @returns {Array.<*>}
      */
     function filterImagesForCategory(category){
-      
+
       return imageObjects.filter(function(item){return item.category === category});
-      
+
     }
   }
 })();
